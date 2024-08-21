@@ -1,4 +1,3 @@
 # QA-ERP-Automation-Challenge
 
-
-testt
+Code ada di Folder cypress > e2e > spec.cy.js
