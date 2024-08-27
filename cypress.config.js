@@ -1,5 +1,4 @@
 const { defineConfig } = require("cypress");
-const path = require('path');
 
 module.exports = defineConfig({
   watchForFileChanges: false,
@@ -14,31 +13,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://phoenix-dev.mceasy.cloud/web/',
-    experimentalStudio: true,
-    webpackConfig: {
-      resolve: {
-        alias: {
-          faker: path.resolve(__dirname, 'node_modules/faker')
-        }
-      }
-    }
+    experimentalStudio: true
   },
 });
-
-// const { defineConfig } = require('cypress');
-// const path = require('path');
-
-// module.exports = defineConfig({
-//   e2e: {
-//     setupNodeEvents(on, config) {
-//       // implement node event listeners here
-//     },
-//     webpackConfig: {
-//       resolve: {
-//         alias: {
-//           faker: path.resolve(__dirname, 'node_modules/faker')
-//         }
-//       }
-//     }
-//   }
-// });

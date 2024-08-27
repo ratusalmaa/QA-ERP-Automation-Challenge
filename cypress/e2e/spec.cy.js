@@ -213,7 +213,7 @@ it('Second Approval', () => {
     cy.log('Melakukan Approve Quotation');
     cy.contains('Approve').click();
 
-        //Memastikan status Quotation sudah Approved
+    //Memastikan status Quotation sudah Approved
     cy.log('Memastikan status Quotation sudah Approved');
     cy.contains('Approve').should('not.exist');
 
